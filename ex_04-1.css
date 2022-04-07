@@ -7,6 +7,18 @@ table {
 
 thead{
 	background-color : #DDDDDD;
-	
-	
+	border-top: 2px solid #808080;
+	border-bottom : 2px solid  #808080;
+}
+
+tbody{
+	border-bottom : 2px solid #808080;
+}
+
+tbody>tr{
+	border-bottom : 2px dotted #808080;
+}
+
+tbody>tr:hover{
+	background-color : #FFFF00;
 }
