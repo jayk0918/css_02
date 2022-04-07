@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="ko"> <!-- 한국어문서만 검색할때, 음성으로 할때 한국어 음성지원 -->
+    <head>
+        <meta charset="UTF-8"> <!-- 브라우저가 문서를 해석할때 필요한 정보 -->
+        <title>스타일시트</title>
+        <!-- 스타일시트자리 -->
+        <style>
+        	.bg-img{
+        		background-color : #FF0000;
+        		width : 2000px;
+        		height : 1000px;
+        		background-image : url(./img/back_img01.jpg);
+        		
+        		/*background-repeat : no-repeat;*/
+        		/* 가로 세로 설정값이 원본 사이즈보다 크면 출력이 무한 반복 */
+        		/* repeat가 기본값 */
+        		/* no-repeat를 부여하면 반복출력이 멈춤 */
+        		/* repeat-x(x축) y(y축)으로만 반복 출력함 */
+        		
+        		/* background-size : contain; */
+        		/* auto는 기본값이므로 별도로 쓸일 없음 */
+        		/* contain : 가로세로 비율에 맞게 설정한 크기 안에 이미지를 확대&축소해서 출력함  */
+        		/* cover : 요소를 모두 덮게 이미지 확대&축소해서 출력함 */
+        		
+        		/* 포지션 실험은 no-repeat상태에서 진행해야 함 */
+        		/* background-repeat : no-repeat; +
+        			 background-position :  left, center, right (수평위치) +
+        			 										top, center, bottom (수직위치)*/
+        		
+        		/* 스크롤 생성 */
+        		/* 기본값은 scroll, fixed로 설정할 경우 화면 스크롤이 되어도 배경이미지는 고정상태가 됨  */
+        		/*background-attachment : fixed;*/
+        		
+        	}
+        	
+        	.bg-img2{
+        		width : 4000px;
+        		height : 2000px;
+        		/* 축약형 */
+        		background : #022250 url(./img/back_img01.jpg) no-repeat fixed bottom center;
+        		
+        		/* 일반형 */
+        		/*
+        		background-color : #022250;
+        		background-image : url(./img/back_img01.jpg);
+        		background-repeat : no-repeat;
+        		background-attachment : fixed;
+        		background-position : bottom center;*/
+        	}
+        	
+        	.bg-img3{
+        		width : 4000px;
+        		height : 2000px;
+        		
+        		/* 축약형 */
+        		background : #7da7d9 url(./img/back_img02.jpg) repeat-y fixed bottom center;
+        		
+        		/* 일반형 */
+        		/*
+	        	background-color : #7da7d9;
+	        	background-image : url(./img/back_img02.jpg);
+	        	background-repeat : repeat-y;
+	        	background-attachment : fixed;
+	        	background-position : bottom center;
+        		*/
+        	
+        	}
+        	
+        	
+        	
+        	
+        </style>
+        
+        
+        
+    </head>
+
+    <body>
+		
+		<div class = "bg-img">
+			안녕하세요
+		</div>
+		<!-- width와 height 미적용 상태에서는 블럭요소(div)가 적용되어 해당 이미지가 div사이즈에 맞게 무한반복 출력됨 -->
+		
+		<br>
+		
+		
+		<div>
+			<img src = "./img/yoo.jpg">
+		</div>
+		
+		<br><br><br>
+		
+		<div class = "bg-img2">
+			안녕하세요
+		</div>
+		
+		
+		<br><br><br>
+		
+		<div class = "bg-img3">
+			안녕하세요
+		</div>
+    
+    	<!-- 기능의 차이를 인지 할 것. (html vs css)
+    		html의 src태그는 html이 내용전달을 하는 의미임을 기억할 것 -> src태그는 그 이미지에 의미가 있다는 뜻
+    		vs
+    		해당 이미지가 배경과 같이 꾸미기의 요소라면 css의 background image를 사용해야 함
+    	 -->
+
+
+    </body>
+
+</html>
