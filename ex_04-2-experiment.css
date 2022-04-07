@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+table {
+	text-align : center;
+	border-collapse : collapse;
+}
+
+tr:nth-child(1){
+	width:100px;
+}
+tr:nth-child(2){
+	width:140px;
+}
+
+/*
+td:nth-of-type(n){
+	width: 140px;
+}
+*/
+/* 가상클래스 : nth-of-type , nth-child */
+/* nth-of-type(n) :  (선택자) 에서 지정한 */
+/* nth-child(n) :  */
+
+
+thead{
+	background-color : #DDDDDD;
+	border-top: 2px solid #808080;
+	border-bottom : 2px solid  #808080;
+}
+
+tbody{
+	border-bottom : 2px solid #808080;
+}
+
+tbody>tr{
+	border-bottom : 2px dotted #808080;
+}
+
+tbody>tr:hover{
+	background-color : #FFFF00;
+}
