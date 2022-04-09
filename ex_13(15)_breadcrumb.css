@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+ol{
+	list-style-type : none;
+}
+
+ol>li{
+		float : left;
+}
+
+ol>li+li:before{
+	content : " > "
+}
